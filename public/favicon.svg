@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Samy</title>
+  <defs>
+    <linearGradient id="tile" x2="1" y2="1">
+      <stop stop-color="#0b0b0b"/>
+      <stop offset="1" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="accent" x2="1" y2="1">
+      <stop stop-color="#ff8b50"/>
+      <stop offset="1" stop-color="#ff8046"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#tile)"/>
+  <g transform="translate(-11.52 -11.52) scale(1.18)">
+  <path fill="#faf9f7" d="M76.45 53.98H62.6C62.6 49 59.7 46.6 52.7 46.6C46.2 46.6 43.55 48.2 43.55 51.3C43.55 54.5 46.9 55.2 54.4 57.1L62.8 59.25C72.4 61.75 77.2 66.4 77.2 73.1C77.2 82.8 67 88.9 53.4 88.9C37.6 88.9 28.7 82.4 28.7 70.5H41.7C41.7 76.1 46.2 78.8 53.6 78.8C59.9 78.8 63.2 77 63.2 73.8C63.2 70.6 59.7 69.2 51.7 67.3L43.6 65.4C34.1 63 30 58.3 30 51.8C30 42.7 39.2 36.65 53.4 36.65C67.5 36.65 76.45 42.85 76.45 53.98Z"/>
+  <path fill="url(#accent)" d="M80.2 71.3h16.5v15.6H80.2z"/>
+  </g>
+</svg>

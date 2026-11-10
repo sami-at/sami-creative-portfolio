@@ -1,0 +1,19 @@
+.services { background: var(--ink); color: var(--paper); padding-block: clamp(80px, 10vw, 140px); }
+.services .section-heading > .eyebrow, .service-column > .eyebrow { color: #aaa89f; }
+.services-intro { max-width: 610px; margin-top: 24px; color: #b5b2a8; font-size: 14px; line-height: 1.75; }
+.service-columns { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(45px, 8vw, 120px); padding-top: 10px; }
+.service-column > .eyebrow { display: block; margin-bottom: 22px; }
+.service-column ul { list-style: none; }
+.service-column li { display: grid; grid-template-columns: 36px 1fr; gap: 15px; align-items: center; min-height: 62px; border-top: 1px solid #47463f; font-size: clamp(17px, 1.65vw, 23px); letter-spacing: -.025em; }
+.service-column li:last-child { border-bottom: 1px solid #47463f; }
+.service-column li .eyebrow { color: #77756c; font-size: 8px; }
+.services-note { display: grid; grid-template-columns: minmax(140px, .42fr) 1fr; gap: 40px; align-items: start; margin-top: 78px; }
+.services-note > .eyebrow { color: #aaa89f; }
+.services-note p { max-width: 750px; font-size: clamp(28px, 3.8vw, 52px); font-weight: 400; letter-spacing: -.04em; line-height: 1.14; }
+.services-note em { font-family: Georgia, serif; font-weight: 400; color: #b5b2a8; }
+@media (max-width: 700px) {
+  .services { padding-block: 68px; }
+  .service-columns { grid-template-columns: 1fr; gap: 50px; }
+  .service-column li { min-height: 50px; font-size: 17px; }
+  .services-note { grid-template-columns: 1fr; gap: 20px; margin-top: 48px; }
+}

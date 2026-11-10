@@ -1,0 +1,8 @@
+# Original portfolio visuals
+Generated with the built-in imagegen tool. Production assets are in `public/visuals/` (JPEG, optimized from the original PNGs).
+
+## chrome-ribbon.jpg
+Use case: stylized-concept. Asset type: ultrawide premium creative developer portfolio hero background, 1536x1024. Create a breathtaking cinematic fine-art 3D photograph of a huge flowing folded ribbon of liquid brushed chrome suspended above a dark obsidian floor. Shape is an elegant abstract loop sweeping diagonally, like sculptural calligraphy or a futuristic film strip, with pale icy silver highlights and a small electric chartreuse green reflection along one edge. Positioned primarily in the RIGHT two thirds, LEFT third mostly near-black negative space for website typography. Deep black charcoal studio, subtle volumetric fog, beautiful reflections, sharp material detail, sophisticated brutalist editorial art direction, high contrast, museum quality, strong depth. No text, no logos, no UI, no watermark. Wide composition.
+
+## editorial-film.jpg
+Use case: photorealistic-natural. Asset type: creative video editor portfolio concept artwork. A cinematic fashion film still: side profile of a young adult woman with slicked back dark hair wearing a black sculptural coat and slim silver earrings, standing in a vast dark desert at dusk, strong wind, fine atmospheric haze. Dramatic warm orange sunlight illuminates the edge of her face from the right, deep shadows, premium fashion campaign aesthetic, analog 35mm grain, warm terracotta and coal black palette. Medium close-up framing, subject in center with space above and below, vertical portrait composition. Photorealistic art direction, no text, no logos, no watermark.

@@ -1,0 +1,52 @@
+.entry-page { min-height: 100svh; display: flex; flex-direction: column; }
+.entry-header { height: 78px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.entry-brand { font-size: 25px; line-height: 1; font-weight: 750; letter-spacing: -.045em; }
+.entry-email { font-size: 11px; border-bottom: 1px solid var(--ink); padding-bottom: 6px; }
+.entry-main { flex: 1; display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(50px, 8vw, 120px); align-items: center; padding-top: 55px; padding-bottom: 55px; }
+.entry-intro h1 { margin-top: 24px; font-size: clamp(54px, 6.2vw, 90px); font-weight: 550; line-height: .96; letter-spacing: -.065em; }
+.entry-intro h1 em { color: var(--accent); font-family: Georgia, serif; font-weight: 400; }
+.entry-intro p { max-width: 390px; margin-top: 26px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.entry-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.entry-option { min-width: 0; padding: 24px; transition: transform .25s ease; }
+.entry-option:hover { transform: translateY(-5px); }
+.video-option { background: var(--ink); color: var(--paper); }
+.web-option { background: var(--surface); }
+.entry-option > .eyebrow { color: var(--muted); font-size: 8px; }
+.video-option > .eyebrow { color: #aaa89f; }
+.option-preview { height: clamp(270px, 36vw, 460px); display: grid; place-items: center; }
+.video-preview { position: relative; }
+.mini-reel { position: absolute; width: 34%; aspect-ratio: 9 / 16; border: 1px solid #59574f; }
+.mini-reel.back { background: #47463f; transform: translateX(-24%) rotate(-8deg); }
+.mini-reel.middle { background: #d5d1c6; transform: translateX(24%) rotate(8deg); }
+.mini-reel.front { z-index: 2; display: grid; place-items: center; background: var(--accent); color: var(--ink); font-family: 'SFMono-Regular', Consolas, monospace; font-size: 8px; }
+.mini-browser { position: relative; width: 85%; aspect-ratio: 1.2; border: 1px solid #aaa79e; background: var(--paper); padding: 29px 14px 14px; }
+.mini-browser::before { content: ''; position: absolute; left: 0; right: 0; top: 20px; border-top: 1px solid #cfccc2; }
+.mini-browser > span { position: absolute; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: #aba89f; }
+.mini-browser > span:nth-child(1) { left: 10px; background: var(--accent); }
+.mini-browser > span:nth-child(2) { left: 20px; }
+.mini-browser > span:nth-child(3) { left: 30px; }
+.browser-block { position: absolute; background: #d8d4c9; }
+.browser-block.one { left: 14px; top: 45px; width: 48%; height: 42%; background: var(--ink); }
+.browser-block.two { right: 14px; top: 45px; width: 39%; height: 18%; background: var(--accent); }
+.browser-block.three { right: 14px; top: 38%; width: 39%; bottom: 14px; }
+.option-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid currentColor; }
+.option-heading h2 { font-size: clamp(26px, 2.6vw, 38px); font-weight: 500; letter-spacing: -.045em; }
+.option-heading p { margin-top: 8px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.video-option .option-heading p { color: #aaa89f; }
+.option-arrow { width: 45px; height: 45px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; }
+.entry-footer { height: 54px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); font-size: 8px; }
+@media (max-width: 900px) {
+  .entry-main { grid-template-columns: 1fr; align-items: start; }
+  .entry-intro h1 br { display: none; }
+  .entry-options { margin-top: 10px; }
+}
+@media (max-width: 600px) {
+  .entry-header { height: 70px; }
+  .entry-main { gap: 35px; padding-top: 42px; padding-bottom: 42px; }
+  .entry-intro h1 { font-size: clamp(48px, 14vw, 65px); }
+  .entry-options { grid-template-columns: 1fr; }
+  .entry-option { padding: 20px; }
+  .option-preview { height: 270px; }
+  .mini-reel { width: 29%; }
+  .entry-email { font-size: 9px; }
+}

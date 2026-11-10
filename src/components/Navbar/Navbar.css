@@ -1,0 +1,31 @@
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(246, 244, 238, .96); backdrop-filter: blur(14px); }
+.nav-content { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.nav-content::after { content: ''; position: absolute; bottom: 0; left: var(--gutter); right: var(--gutter); border-bottom: 1px solid var(--line); }
+.wordmark { display: flex; align-items: center; gap: 18px; font-size: 25px; line-height: 1; font-weight: 750; letter-spacing: -.045em; }
+.brand-caption { padding-left: 18px; border-left: 1px solid var(--line); font-family: 'SFMono-Regular', Consolas, monospace; font-size: 8px; font-weight: 500; letter-spacing: .08em; line-height: 1.5; }
+.desktop-nav { display: flex; align-items: center; gap: 25px; margin-left: auto; }
+.desktop-nav a { font-size: 13px; padding: 20px 0; position: relative; }
+.nav-dot { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); bottom: 9px; left: calc(50% - 2px); opacity: 0; }
+.desktop-nav a:hover .nav-dot, .desktop-nav a[aria-current] .nav-dot { opacity: 1; }
+.portfolio-switch { padding-bottom: 5px; border-bottom: 1px solid var(--ink); font-size: 10px; white-space: nowrap; }
+.nav-contact { display: flex; align-items: center; gap: 18px; background: var(--ink); color: var(--paper); padding: 12px 15px; font-size: 12px; }
+.nav-contact .arrow-icon { width: 16px; height: 16px; }
+.menu-toggle { display: none; }
+.mobile-navigation[hidden] { display: none; }
+.mobile-navigation { padding: 15px var(--gutter) 28px; border-bottom: 1px solid var(--line); }
+.mobile-navigation a { display: flex; align-items: center; gap: 22px; padding: 17px 0; font-size: 28px; border-bottom: 1px solid var(--line); }
+.mobile-navigation .arrow-icon { margin-left: auto; }
+.mobile-navigation .mobile-switch { margin-top: 14px; border: 0; background: var(--ink); color: var(--paper); padding-inline: 16px; }
+.mobile-navigation .mobile-switch .eyebrow { color: #aaa89f; }
+@media (max-width: 1050px) {
+  .desktop-nav { gap: 18px; }
+  .brand-caption { display: none; }
+  .wordmark { gap: 0; }
+}
+@media (max-width: 840px) {
+  .nav-content { height: 70px; }
+  .desktop-nav, .nav-contact, .portfolio-switch { display: none; }
+  .wordmark { font-size: 24px; }
+  .menu-toggle { display: flex; gap: 20px; align-items: center; min-height: 44px; background: none; border: 0; padding: 0 0 0 8px; font-size: 13px; }
+  .menu-toggle span { font-size: 24px; }
+}
